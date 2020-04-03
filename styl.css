@@ -2,5 +2,7 @@
 .damn-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
 .damn-jumbo{font-size:64px}
 .damn-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.damn-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 .damn-large{font-size:18px}
 .damn-animate-top-center{text-align:center}
+.damn-display-container{position:relative}
