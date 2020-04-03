@@ -4,10 +4,11 @@
 .damn-bottom{margin-bottom:16px}
 .damn-row:after,.damn-row:before{content:"";display:table;clear:both}
 .damn-col{width:33.33333%}
+.damn-col{float:left;width:100%}
 .damn-opacity{opacity:0.60}
 .damn-hover:hover{opacity:0.60}
 .damn-main{padding:0.01em 16px}
 .damn-overlay{padding-top:64px;padding-bottom:64px}
 .damn-color{color:#000;background-color:#f1f1f1}
 .damn-enlargement{font-size:24px}
-.damn-row-overlay{padding:0 8px}
+.damn-row-overlay>.damn-col{padding:0 8px}
