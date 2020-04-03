@@ -4,7 +4,6 @@
 .damn-bottom{margin-bottom:16px}
 .damn-row:after,.damn-row:before{content:"";display:table;clear:both}
 .damn-col{width:33.33333%}
-.damn-col{float:left;width:100%}
 .damn-opacity{opacity:0.60}
 .damn-hover:hover{opacity:0.60}
 .damn-main{padding:0.01em 16px}
