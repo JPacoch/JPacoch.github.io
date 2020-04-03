@@ -2,7 +2,7 @@
 .damn-content{max-width:980px}
 .damn-center{text-align:center}
 .damn-bottom{margin-bottom:16px}
-.damn-row:after,.damn-row:before{content:"";display:table;clear:both}
+.damn-row{content:"";display:table;clear:both}
 .damn-col{width:33.33333%}
 .damn-opacity{opacity:0.60}
 .damn-hover:hover{opacity:0.60}
