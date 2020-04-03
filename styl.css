@@ -6,3 +6,9 @@
 .damn-large{font-size:18px}
 .damn-animate-top-center{text-align:center}
 .damn-display-container{position:relative}
+.damn-content{max-width:980px}
+.damn-center{text-align:center}
+.damn-bottom{margin-bottom:16px}
+.damn-row:after
+.damn-row:before
+.damn-col{width:33.33333%}
