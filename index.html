@@ -7,22 +7,51 @@
         <title> DAMN. </title>
     </head>
     <style>
-        body, h1 {font-family: Palatino, serif; color: darkolivegreen;}
-        body, html {height: 100%; text-align: center; color: white; font-family: Palatino, serif;}
-        .bgimg  {
-            background-image: url('IMG_20191109_122627.jpg');
-            min-height: 100%;
-            background-position: center;
-            background-size: cover;
-            }
+        body, h1 {font-family: "verdana", serif;}
+        img {margin-bottom: -7  px}
+        .damn-row-overlay img {margin-bottom: 12px}
     </style>
     <body>
-        <div class="bgimg damn-display-container damn-animate-opacity">
-            <div class="damn-display-middle">
-                <h1 class="damn-jumbo damn-animate-top">CHOLERA.</h1>
-                <p class="damn-large damn-center">test</p>
+    <div>
+        <div class="damn-content" style="max-width:1500px">
+            <div class="damn-opacity">
+            <header class="damn-center damn-bottom">
+                <h1><b>FOTO</b></h1>
+                <p><b><i>strona testowa</i></b></p>
+            </header>
             </div>
         </div>
+        <div class="damn-row" id="grid" style="margin-bottom:128px">
+            <div class="damn-col">
+                <img src="a.jpg" style="width:100%">
+                <img src="d.jpg" style="width:100%">
+                <img src="g.jpg" style="width:100%">
+            </div>
+            <div class="damn-col">
+                <img src="b.jpg" style="width:100%">
+                <img src="e.jpg" style="width:100%">
+                <img src="h.jpg" style="width:100%">
+            </div>
+            <div class="damn-col">
+                <img src="c.jpg" style="width:100%">
+                <img src="f.jpg" style="width:100%">
+                <img src="i.jpg" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <footer class="damn-main damn-overlay damn-color damn-center damn-opacity damn-enlargement" style="margin-top:128px">
+        <p><a>stopka.</a></p>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("grid");
+            if (x.className === "damn-row") {
+                x.className = "damn-row-overlay";
+            } else {
+                x.className = x.className.replace("w3-row-overlay", "damn-row");
+            }
+        }
+    </script>
     </body>
 </html>
 
