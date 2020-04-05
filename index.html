@@ -3,55 +3,176 @@
     <head>
         <meta charset = "UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="color:Icons Color" content="#ffffff" />
         <link rel="stylesheet" type="text/css" href="styl.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title> DAMN. </title>
     </head>
     <style>
-        body, h1 {font-family: "verdana", serif;}
-        img {margin-bottom: -7  px}
-        .damn-row-overlay img {margin-bottom: 12px}
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .overlay a {
+          padding: 8px;
+          text-decoration: none;
+          font-size: 36px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .overlay a:hover, .overlay a:focus {
+          color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .overlay a {font-size: 20px}
+          .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+          }
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Lato", sans-serif;
+            transition: background-color .5s;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding: 0 30px;
+        }
+
+        .column {
+            -ms-flex: 33.3333%;
+            flex: 33.3333%;
+            max-width: 33.3333%;
+            padding: 0 30px;
+        }
+
+        .column img {
+            margin-top: 80px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
     </style>
     <body>
-    <div>
+    <div id="main">
+        <!-- naglowek -->
         <div class="damn-content" style="max-width:1500px">
             <div class="damn-opacity">
             <header class="damn-center damn-bottom">
                 <h1><b>FOTO</b></h1>
-                <p><b><i>strona testowa</i></b></p>
             </header>
+                <span style="font-size:20px;position:absolute;right:35px;
+                    cursor:pointer" onclick="openNav()"> &#9776; OPEN
+                </span>
             </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                <p>elo</p>
+                <a href="#">O MNIE</a>
+                <a href="#">KONTAKT</a>
+            </div>
+</div>
+
         </div>
-        <div class="damn-row" id="grid" style="margin-bottom:128px">
-            <div class="damn-col">
+
+        <!-- gridzik -->
+        <div class="row" id="grid" style="margin-bottom:128px">
+            <div class="column">
                 <img src="a.jpg" style="width:100%">
                 <img src="d.jpg" style="width:100%">
                 <img src="g.jpg" style="width:100%">
             </div>
-            <div class="damn-col">
+            <div class="column">
                 <img src="b.jpg" style="width:100%">
                 <img src="e.jpg" style="width:100%">
                 <img src="h.jpg" style="width:100%">
             </div>
-            <div class="damn-col">
+            <div class="column">
                 <img src="c.jpg" style="width:100%">
                 <img src="f.jpg" style="width:100%">
                 <img src="i.jpg" style="width:100%">
             </div>
         </div>
     </div>
+
+    <!-- stopka -->
     <footer class="damn-main damn-overlay damn-color damn-center damn-opacity damn-enlargement" style="margin-top:128px">
         <p><a>stopka.</a></p>
+    <a href="https://twitter.com/JakubPacocha?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @JakubPacocha</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </footer>
     <script>
-        function myFunction() {
-            var x = document.getElementById("grid");
-            if (x.className === "damn-row") {
-                x.className = "damn-row-overlay";
-            } else {
-                x.className = x.className.replace("w3-row-overlay", "damn-row");
-            }
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
         }
-    </script>
+
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+</script>
     </body>
 </html>
 

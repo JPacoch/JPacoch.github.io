@@ -1,13 +1,33 @@
 /* Basic CSS */
-.damn-content{max-width:980px}
-.damn-center{text-align:center}
-.damn-bottom{margin-bottom:16px}
-.damn-row{content:"";display:table;clear:both}
-.damn-col{width:33.33333%}
-.damn-opacity{opacity:0.60}
-.damn-hover:hover{opacity:0.60}
-.damn-main{padding:0.01em 16px}
-.damn-overlay{padding-top:64px;padding-bottom:64px}
-.damn-color{color:#000;background-color:#f1f1f1}
-.damn-enlargement{font-size:24px}
-.damn-row-overlay>.damn-col{padding:0 8px}
+.damn-content{
+    max-width:980px
+}
+.damn-center{
+    text-align:center
+}
+
+.damn-bottom{
+    margin-bottom:16px
+}
+
+.damn-opacity{
+    opacity:0.60
+}
+.damn-hover:hover{
+    opacity:0.60
+}
+.damn-main{
+    padding:0.01em 16px
+}
+
+.damn-overlay{
+    padding-top:64px;padding-bottom:64px
+}
+
+.damn-color{
+    color:#000;background-color:#f1f1f1
+}
+
+.damn-enlargement{
+    font-size:24px
+}
