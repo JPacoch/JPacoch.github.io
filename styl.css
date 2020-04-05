@@ -11,7 +11,7 @@
 }
 
 .damn-opacity{
-    opacity:0.60
+    opacity:1
 }
 .damn-hover:hover{
     opacity:0.60
@@ -30,4 +30,10 @@
 
 .damn-enlargement{
     font-size:24px
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
