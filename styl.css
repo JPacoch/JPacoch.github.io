@@ -31,7 +31,9 @@
 .damn-enlargement{
     font-size:24px
 }
-
+.damn-logotext{
+font-family:trebuchet ms, sans-serif;font-weight:650;font-size:85px;color:black
+}
 .logo {
     display: block;
     margin-left: auto;
@@ -64,7 +66,7 @@ i {
 }
 #up-fun:hover {
   background-color: #cccccc;
-
+}
 /* !!! nie moje jakby co !!! */
 
 section #services {
@@ -147,5 +149,12 @@ section #services li span {
 
 .container {
   padding: 0 16px;
+}
+
+damn-font {
+}
+
+.damn-tweet {
+    margin-left:150px; margin-top:75px
 }
 
